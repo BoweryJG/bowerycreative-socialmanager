@@ -2,11 +2,11 @@
   "name": "bowerycreative-social-media-manager",
   "version": "1.0.0",
   "description": "AI-powered dental practice social media automation",
-  "main": "dist/server.js",
+  "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node src/server.js",
     "lint": "eslint src/**/*.ts",
     "test": "jest"
   },

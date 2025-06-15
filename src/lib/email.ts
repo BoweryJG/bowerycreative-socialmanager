@@ -55,9 +55,10 @@ export async function sendMagicLink(email: string, practiceName: string, magicUr
   `;
 
   await transporter.sendMail({
-    from: process.env.EMAIL_FROM || 'magic@bowerycreative.com',
+    from: `BoweryCreative <${process.env.EMAIL_FROM || 'hello@bowerycreativeagency.com'}>`,
     to: email,
     subject: '⚡ Connect Your Social Media - BoweryCreative',
-    html
+    html,
+    replyTo: 'hello@bowerycreativeagency.com'
   });
 }
